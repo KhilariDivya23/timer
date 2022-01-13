@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    /* background-image: url(./back.gif); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    background-color: #74797f;
+}
+
+.time-display{
+    border: 2px solid black;
+    width: 600px;
+    height: 300px;
+    border-radius: 50px ;
+    /* background-color: black; */
+    /* opacity: 80%; */
+    box-shadow: 9px 9px 7px #708090;
+    background-color: #fff; 
+}
+
+.up-bar , .down-bar{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numbers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour , .min , .sec{
+    border: 2px solid black;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #121212;    
+}
+
+.fas{
+    color: #000;
+    cursor: pointer;
+}
+
+.up-bar button , .down-bar button{
+    background-color: transparent;
+    border: none;
+}
+
+.control-buttons button{
+    display: block;
+    width: 100px;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 300;
+    margin: 17px;
+}
+
+.control-buttons button.off{
+    background-color:  none;
+    border: none;
+}

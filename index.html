@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">             
+    <title>Timer</title>
+</head>
+<body>
+    <div class="time-display">
+        <div class="up-bar">
+            <button onclick="increase('hour')"><i class="fas fa-caret-up fa-4x" ></i></button>
+            <button onclick="increase('min')"><i class="fas fa-caret-up fa-4x" ></i></button>
+            <button onclick="increase('sec')"><i class="fas fa-caret-up fa-4x" ></i></button>
+        </div>
+        <div class="numbers">
+            <div class="hour" id="hour">00</div>
+            <div class="min" id="min">00</div>
+            <div class="sec" id="sec">00</div>
+        </div>
+        <div class="down-bar">
+            <button onclick="decrease('hour')"><i class="fas fa-caret-down fa-4x" ></i></button>
+            <button onclick="decrease('min')"><i class="fas fa-caret-down fa-4x" ></i></button>
+            <button onclick="decrease('sec')"><i class="fas fa-caret-down fa-4x" ></i></button>
+        </div>
+    </div>
+    
+    <div class="control-buttons">
+        <button onclick="time_start()">START</button>
+    <button onclick="time_pause()">PAUSE</button>
+    <button onclick="time_stop()">STOP</button>
+    <button onclick="sound_stop()" class="off"><i class="fas fa-volume-mute fa-2x"></i></button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
