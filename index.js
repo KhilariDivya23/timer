@@ -58,8 +58,8 @@ function time_start_now()
     {
         --actual_time;
         var remain_hr = Math.floor(actual_time/3600);
-        var remain_min = Math.floor(actual_time/60);
-        var remain_sec = actual_time % 60;
+        var remain_min = Math.floor(((actual_time/3600) - remain_hr) * 60);
+        var remain_sec = Math.floor(((((actual_time/3600) - remain_hr)*60) - remain_min)*60);
         if(remain_hr <= 9)
             remain_hr = "0" + remain_hr;
         if(remain_min <= 9)
